@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" msdata:Ordinal="1" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmployeeIdRequired">
+    <value>L'identifiant de l'employé est obligatoire.</value>
+  </data>
+  <data name="BreakDurationNegative">
+    <value>La durée de la pause ne peut pas être négative.</value>
+  </data>
+  <data name="MandatoryReasonRequired">
+    <value>Le motif de la correction est obligatoire selon la loi (art. 73 OLT 1).</value>
+  </data>
+  <data name="ActiveShiftAlreadyExists">
+    <value>Un quart de travail actif non terminé existe déjà pour cet employé.</value>
+  </data>
+  <data name="NoActiveShiftFound">
+    <value>Aucun quart de travail ouvert trouvé à terminer pour cet employé.</value>
+  </data>
+  <data name="InvalidClockOutTime">
+    <value>L'heure de fin ne peut pas être antérieure à l'heure de début.</value>
+  </data>
+  <data name="EmployeeNotFound">
+    <value>Employé introuvable.</value>
+  </data>
+  <data name="TimeEntryNotFound">
+    <value>Enregistrement de temps introuvable.</value>
+  </data>
+  <data name="DailyRestPeriodViolated">
+    <value>Attention : le repos quotidien légal de 11 heures consécutives n'a pas été respecté (art. 15a LL).</value>
+  </data>
+  <data name="DailyAmplitudeExceeded">
+    <value>Attention : l'amplitude quotidienne maximale de 14 heures a été dépassée (art. 10 LL).</value>
+  </data>
+  <data name="GpsTrackingNotice">
+    <value>Géolocalisation ponctuelle conforme à l'art. 26 OLT 3 et à la LPD (aucune surveillance continue).</value>
+  </data>
+  <data name="InvalidCredentials">
+    <value>Identifiants de connexion non valides.</value>
+  </data>
+</root>

@@ -1,0 +1,5 @@
+{
+    "appHost": {
+        "path": "src\\OpenX.Gest.AppHost\\OpenX.Gest.AppHost.csproj"
+    }
+}

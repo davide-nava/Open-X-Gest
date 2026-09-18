@@ -1,0 +1,56 @@
+<Project>
+
+    <PropertyGroup>
+        <TargetFramework>net11.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Company>XXXXXXXXX</Company>
+        <Copyright>XXXXXXXXXXXXXXXXXX</Copyright>
+        <Authors>XXXXXXXXX</Authors>
+        <!-- <ApplicationIcon>..\..\..\..\assets\img\logo.ico</ApplicationIcon> -->
+        <NeutralLanguage>it</NeutralLanguage>
+        <NuGetAudit>false</NuGetAudit>
+        <PackageIcon>logo.png</PackageIcon>
+        <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <LangVersion>preview</LangVersion>
+        <EnablePreviewFeatures>true</EnablePreviewFeatures>
+        <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+        <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+        <RunAnalyzers>true</RunAnalyzers>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <_SkipUpgradeNetAnalyzersNuGetWarning>true</_SkipUpgradeNetAnalyzersNuGetWarning>
+        <AnalysisLevel>preview-recommended</AnalysisLevel>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <ReportAnalyzer>true</ReportAnalyzer>
+        <AnalysisMode>All</AnalysisMode>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <StaticAnalysisCodeType>General</StaticAnalysisCodeType>
+        <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+        <AnalysisModeSecurity>All</AnalysisModeSecurity>
+        <HotReloadAutoRestart>true</HotReloadAutoRestart>
+        <RunCodeAnalysis>false</RunCodeAnalysis>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <AccelerateBuildsInVisualStudio>true</AccelerateBuildsInVisualStudio>
+        <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Roslynator.Analyzers" Version="4.*" PrivateAssets="all" />
+        <PackageReference Include="Roslynator.CodeFixes" Version="4.*" PrivateAssets="all" />
+        <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556" PrivateAssets="all" />
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="*" PrivateAssets="all" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <AdditionalFiles Include="$(MSBuildThisFileDirectory)assets\stylecop.json" Link="stylecop.json" />
+        <AdditionalFiles Include="$(MSBuildThisFileDirectory).editorconfig" Link=".editorconfig" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <WarningsAsErrors>$(WarningsAsErrors);CA*;SA*;RS*;SCA*;RCS*</WarningsAsErrors>
+        <NoWarn>$(NoWarn);CA1303;SA1600;CS1591</NoWarn>
+    </PropertyGroup>
+
+   
+</Project>

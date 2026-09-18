@@ -1,0 +1,28 @@
+# Build outputs
+**/bin/**
+**/obj/**
+**/publish/**
+
+# Database and SQLite files
+**/data/**
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# IDE and Editor files
+**/.vs/**
+**/.idea/**
+**/*.user
+**/*.suo
+
+# Test results and coverage
+**/TestResults/**
+**/coverage/**
+**/coveragereport/**
+
+# Sensitive configuration
+**/secrets.json
+**/appsettings.*.local.json
+**/appsettings.Local.json

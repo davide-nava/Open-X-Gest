@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" msdata:Ordinal="1" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EmployeeIdRequired">
+    <value>Die Mitarbeiter-ID ist erforderlich.</value>
+  </data>
+  <data name="BreakDurationNegative">
+    <value>Die Pausendauer darf nicht negativ sein.</value>
+  </data>
+  <data name="MandatoryReasonRequired">
+    <value>Der Korrekturgrund ist gesetzlich vorgeschrieben (Art. 73 ArGV 1).</value>
+  </data>
+  <data name="ActiveShiftAlreadyExists">
+    <value>Für diesen Mitarbeiter existiert bereits eine aktive, nicht abgeschlossene Schicht.</value>
+  </data>
+  <data name="NoActiveShiftFound">
+    <value>Keine offene Schicht zum Abschliessen für diesen Mitarbeiter gefunden.</value>
+  </data>
+  <data name="InvalidClockOutTime">
+    <value>Die Ausstempelzeit darf nicht vor der Einstempelzeit liegen.</value>
+  </data>
+  <data name="EmployeeNotFound">
+    <value>Mitarbeiter nicht gefunden.</value>
+  </data>
+  <data name="TimeEntryNotFound">
+    <value>Zeiterfassungseintrag nicht gefunden.</value>
+  </data>
+  <data name="DailyRestPeriodViolated">
+    <value>Warnung: Gesetzliche tägliche Mindestruhezeit von 11 aufeinanderfolgenden Stunden nicht eingehalten (Art. 15a ArG).</value>
+  </data>
+  <data name="DailyAmplitudeExceeded">
+    <value>Warnung: Maximale tägliche Arbeitsspanne von 14 Stunden überschritten (Art. 10 ArG).</value>
+  </data>
+  <data name="GpsTrackingNotice">
+    <value>Punktuelle GPS-Erfassung konform mit Art. 26 ArGV 3 und DSG (keine permanente Überwachung).</value>
+  </data>
+  <data name="InvalidCredentials">
+    <value>Ungültige Anmeldedaten.</value>
+  </data>
+</root>

@@ -1,0 +1,11 @@
+services:
+  seq:
+    image: datalust/seq:latest
+    container_name: seq-dev 
+    ports:
+      - 5341:5341
+      - 5341:8080      
+    environment:
+      ACCEPT_EULA: Y
+      SEQ_FIRSTRUN_ADMINPASSWORD: admin
+    restart: always

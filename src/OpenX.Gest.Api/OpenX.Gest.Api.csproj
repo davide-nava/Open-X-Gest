@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+      <Title>OpenX.Gest.Api</Title>
+      <Product>OpenX.Gest.Api</Product>
+      <Description>OpenX.Gest.Api</Description>
+      <PackageId>OpenX.Gest.Api</PackageId>
+      <RootNamespace>OpenX.Gest.Api</RootNamespace>
+      <AssemblyName>OpenX.Gest.Api</AssemblyName>
+      <UserSecretsId>b8962ea6-3717-49e1-af22-af58217f3cd4</UserSecretsId>
+      <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+      <DockerfileContext>..\..</DockerfileContext>
+      <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="11.0.0-rc.1.26425.128" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.24.2-preview.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
+    <PackageReference Include="Serilog.AspNetCore" Version="10.0.1-dev-02312" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="11.0.0-rc.1.26425.128">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Open-X-Gest.ServiceDefaults\Open-X-Gest.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\OpenX.Gest.Application\OpenX.Gest.Application.csproj" />
+    <ProjectReference Include="..\OpenX.Gest.Infrastructure\OpenX.Gest.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Roslynator.Analyzers" Version="5.0.0" />
+    <PackageReference Update="Roslynator.CodeFixes" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

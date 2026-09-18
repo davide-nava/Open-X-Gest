@@ -1,0 +1,20 @@
+# Open-X-Gest Cursor Rules & AI Assistant Constraints
+
+## Technology Stack
+- Language: C# 14 / .NET 11 (with .NET 10/11 preview support)
+- Architecture: Clean Architecture & CQRS
+- In-Process Messaging: MediatR
+- Validation: FluentValidation with Pipeline Behavior
+- Persistence: Entity Framework Core with SQLite (Dynamic portable path & WAL mode)
+- Authentication: ASP.NET Core Identity (Cookie for Blazor & JWT Bearer for APIs)
+- Presentation: Blazor InteractiveServer with MudBlazor 9+
+- Orchestration: .NET Aspire 13
+- Testing: xUnit, FluentAssertions, Moq, Coverlet
+
+## Guidelines & Strict Constraints
+1. **Language**: English only for code, XML docs, UI text, logs, and comments.
+2. **Quality**: TreatWarningsAsErrors is active. Zero warnings allowed.
+3. **XML Comments**: Always provide full XML documentation on all types and members.
+4. **Clean Architecture**: Never violate layer boundaries.
+5. **MudBlazor**: Use async methods (e.g. `ValidateAsync()`, `ShowMessageBoxAsync(...)`).
+6. **Encapsulation**: Domain models have private setters and validate invariants in constructors/methods.

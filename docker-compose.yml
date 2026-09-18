@@ -1,0 +1,6 @@
+services:
+  openx.gest.api:
+    image: ${DOCKER_REGISTRY-}openxgestapi
+    build:
+      context: .
+      dockerfile: src/OpenX.Gest.Api/Dockerfile

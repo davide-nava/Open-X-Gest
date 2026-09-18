@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <Title>OpenX.Gest.Application</Title>
+      <Product>OpenX.Gest.Application</Product>
+      <Description>OpenX.Gest.Application</Description>
+      <PackageId>OpenX.Gest.Application</PackageId>
+      <RootNamespace>OpenX.Gest.Application</RootNamespace>
+      <AssemblyName>OpenX.Gest.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenX.Gest.Domain\OpenX.Gest.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="11.0.0-rc.1.26425.128" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Roslynator.Analyzers" Version="5.0.0" />
+    <PackageReference Update="Roslynator.CodeFixes" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

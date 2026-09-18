@@ -1,0 +1,35 @@
+<Solution>
+  <Folder Name="/aspire/">
+    <Project Path="src/Open-X-Gest.AppHost/Open-X-Gest.AppHost.csproj" Id="3fd597cb-c9b2-482f-acbd-8476ca8bc5df" />
+    <Project Path="src/Open-X-Gest.ServiceDefaults/Open-X-Gest.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/Elementi di soluzione/">
+    <File Path=".copilotignore" />
+    <File Path=".cursorrules" />
+    <File Path=".dockerignore" />
+    <File Path=".editorconfig" />
+    <File Path=".geminiignore" />
+    <File Path=".gitignore" />
+    <File Path=".roslynatorconfig" />
+    <File Path="AGENTS.md" />
+    <File Path="aspire.config.json" />
+    <File Path="Directory.Build.props" />
+    <File Path="LICENSE" />
+    <File Path="mcp.json" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+    <File Path="sonar-project.properties" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/OpenX.Gest.Api/OpenX.Gest.Api.csproj" />
+    <Project Path="src/OpenX.Gest.Application/OpenX.Gest.Application.csproj" />
+    <Project Path="src/OpenX.Gest.Domain/OpenX.Gest.Domain.csproj" />
+    <Project Path="src/OpenX.Gest.Infrastructure/OpenX.Gest.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OpenX.Gest.Application.UnitTests/OpenX.Gest.Application.UnitTests.csproj" />
+  </Folder>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+</Solution>

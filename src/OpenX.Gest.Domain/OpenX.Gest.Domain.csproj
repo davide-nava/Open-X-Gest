@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+      <Title>OpenX.Gest.Domain</Title>
+      <Product>OpenX.Gest.Domain</Product>
+      <Description>OpenX.Gest.Domain</Description>
+      <PackageId>OpenX.Gest.Domain</PackageId>
+      <RootNamespace>OpenX.Gest.Domain</RootNamespace>
+      <AssemblyName>OpenX.Gest.Domain</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Roslynator.Analyzers" Version="5.0.0" />
+    <PackageReference Update="Roslynator.CodeFixes" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
